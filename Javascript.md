@@ -5,5 +5,6 @@ Object.setProtptypeOf() -- 设置对象的原型
 
 
 
-# [SameValue比较法](https://tc39.github.io/ecma262/#sec-samevalue)
-https://tc39.github.io/ecma262/#sec-samevalue
+### 相关链接：
+* [SameValue比较法](https://tc39.github.io/ecma262/#sec-samevalue)
+* 
