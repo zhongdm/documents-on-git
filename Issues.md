@@ -4,4 +4,5 @@
 
 ## vue + iview + spreadjs
 > 在tabs组件下，引入spreadjs， 点击spreadjs的cell，滚动条会自动跳转到顶部
-> 解决： iview的tab组件的属性animated导致的，禁用就可以了, :animated="false"
+> 解决： iview的tab组件的属性animated导致的，禁用就可以了, :animated="false"; 
+> ***根源是css3属性will-change，重新渲染了页面的指定区域***  will-change有待进一步理解
