@@ -1,2 +1,14 @@
 ## console中的$
 > $0-$4, $$, $_, $i('lodash') ---console Importer developmer插件
+
+
+# 性能分析
+### web worker 
+### 浏览器内置好的 shouldYield() 和原生的 Scheduling API。
+
+立即求值： 你可以立即运行耗时的代码。
+惰性求值： 等到你的程序里的其他部分需要这段耗时代码的结果时，再去运行它。
+延迟求值： 使用 setTimeout 之类的函数，在后续任务中来执行你的代码。
+空闲求值： 一种延迟求值策略，你可以使用像 requestIdleCallback 这样的 API 来组织代码运行。
+setTimeout() 和requestIdleCallback() （事件循环）
+任务和为任务的区别（重要）
