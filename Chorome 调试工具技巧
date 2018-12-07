@@ -1,0 +1,2 @@
+## console中的$
+> $0-$4, $$, $_, $i('lodash') ---console Importer developmer插件
