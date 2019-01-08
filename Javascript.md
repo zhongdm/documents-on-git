@@ -8,7 +8,7 @@ Object.setProtptypeOf() -- 设置对象的原型
 > 方法二: (10).toString()
 > 方法三: 10 + ''
 
-## 常见js的问题
+### 常见js的问题
 1. for..in, for..of的区别
 ```
 let a = ['a', 'b', 'c']
@@ -32,7 +32,9 @@ for (let value of a) {
   });
   seajs.use()
   ```
-  
+ 3. exports变量 和 module.exports属性
+ > 在nodejs中，exports相当于对module.exports的引用
+ exports = module.exports = {}
 
 ### 相关链接：
 * [SameValue比较法](https://tc39.github.io/ecma262/#sec-samevalue)
