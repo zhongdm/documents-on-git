@@ -22,9 +22,9 @@ for (let value of a) {
 }
 ```
 2. CommonJS(nodejs), AMD(require.js), CMD(seajs)的区别
->> require(), 
->> define(['a', 'b'], callback) --- 依赖前置
->> 
++ require(), 
++ define(['a', 'b'], callback) --- 依赖前置
++
   ```
   define(function(require, exports, module) { --- 懒加载（就近加载，延迟加载）， 一个文件即一个模块
     var $ = require('jquery.js')
