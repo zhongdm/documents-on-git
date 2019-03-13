@@ -1,0 +1,119 @@
+淘宝镜像：
+npm install -g cnpm --registry=https://registry.npm.taobao.org
+
+# git
+// 上传代码
+git init
+git add .
+git commit -m "aaa"
+
+git remote add dev git地址
+git push -u dev master:dev
+	    远程分支  本地分支
+
+git clone -b 分支名 仓库地址
+参考地址：http://www.cnblogs.com/llining/archive/2017/12/22/8084578.html
+
+---从分支获取最新代码，merge
+$ git pull origin 指定分支的名字（development）
+$ git push origin -- 本地分支和远程分支同名，可以省略
+$ git merge dev -- 代码合并
+
+$ git branch -d dev -- 删除分支
+$ 
+---
+$ git push <远程主机名> <本地分支名>:<远程分支名>
+
+git push --set-upstream origin development
+
+##错误 non-fast-forward
++ git pull --rebase origin master
++ git push -u origin master
+
+## 覆盖本地修改的文件
+删除本地文件，从远程版本库拉取最新代码
+$ git checkout -- [文件名]
+
+## 强制覆盖本地修改
+$ git fetch --all
+$ git reset --hard origin/*** -- 远程分支
+$ git pull
+
+##删除依赖
+rm -rf node_modules/
+
+## Merging状态
+git add . && git commit -m [msg]
+
+知识点摘要
+# substr(start, len) & substring(start, end)
+var str="Hello world!"
+str.substr(3,7) // lo worl ps：len = 【第二个参数】
+str.substring(3, 7) // lo w   ps: 不接受负数，len = end -start
+
+# Array的遍历方法
+some   是否有满足条件的值
+filter  过滤掉不符合条件的数据
+reduce 所有数据处理成一个结果
+from  根据给定的数组，数据的再处理，生成一个新的数组
+every  数组中的每一个数据是否都满足条件，返回true或者false
+map   函数的再处理，
+slice
+splice
+forEach
+
+# 自定义字体
+@font-face
+{
+	font-family: myFirstFont;
+	src: url('Sansation_Light.ttf')
+		,url('Sansation_Light.eot'); /* IE9 */
+}
+
+div
+{
+	font-family:myFirstFont;
+}
+
+# path.resolve() & path.join()
+
+# linux命令行操作文件	
+  $ vim
+  $ insert
+  $ esc --退出insert模式 , 
+  $ :w --保存， :q --退出，  :wq, :x, :w!, :q!
+
+# 路径
+ ./ --> 当前目录
+ /  --> 
+ ../
+
+#CSS
+## 伪元素
+::before
+::after
+::first-letter
+::first-line
+::selection
+> 伪类和伪元素的区别：
+伪类： 表示的是一种状态
+伪元素： 表示的是文档的某个确认部分的表现
+http://www.w3cplus.com/css/css-specificity-things-you-should-know.html
+
+# webpack
+## 多入口的实现
+
+# Vue.js
+## LIBRARY
+Animate.css -- css動畫庫
+https://cdn.jsdelivr.net/npm/animate.css@3.5.1
+Velocity.js -- js動畫庫
+https://lib.baomitu.com/velocity/1.2.3/velocity.min.js
+Tween.js
+Tween
+
+
+## 
+Object.assign  -> 拷贝
+
+
