@@ -55,6 +55,9 @@ for (let value of a) {
 + JSON.parse(JSON.stringify())
 + 借助lodash ---原理是啥？？？？？
 
+#### https跳转到http，无法访问
++ 重定向地址： A -> B: window.location.href = B 
+
 ### 相关链接：
 * [SameValue比较法](https://tc39.github.io/ecma262/#sec-samevalue)
 * 
