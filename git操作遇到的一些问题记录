@@ -26,6 +26,17 @@ $ git push <远程主机名> <本地分支名>:<远程分支名>
 
 git push --set-upstream origin development
 
+# git rollback
+1. 没有 git add .
+  + git checkout . -- 撤销所有修改的文件
+  + git checkout filename
+2. 操作了git add .
+  + git reset HEAD filename
+  + git reset HEAD .
+3. 操作了git commit
+  + git reset --hard HEAD^ -- 回退到上一次
+  + git reset --hard commitid -- 回退到指定版本
+
 ##错误 non-fast-forward
 + git pull --rebase origin master
 + git push -u origin master
