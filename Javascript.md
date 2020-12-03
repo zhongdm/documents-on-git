@@ -58,6 +58,11 @@ for (let value of a) {
 #### https跳转到http，无法访问
 + 重定向地址： A -> B: window.location.href = B 
 
+#### 浏览器中输入地址，回车后发生了什么？
+DNS域名解析 -> http请求（三次握手） -> 页面解析（html tree, dom tree => render tree => render layer =>reflow, repaint(不改变布局和大小) 等）
+
+
+
 ### 相关链接：
 * [SameValue比较法](https://tc39.github.io/ecma262/#sec-samevalue)
 * 
