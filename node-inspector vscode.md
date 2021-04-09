@@ -27,3 +27,7 @@ $ node --inspect=${port} **.js
 port 可以使9229等和服务器的端口不冲突的
 
 3. 启动绿色按钮，并刷新页面（比如路径是：localhost:3000）
+
+
+
+## VSCODE中调试node.js, 需要先安装Debugger for chrome， 然后打断点， 安装auto attach： ctrl+shift+p:Debug：toggle auto attach 在vs的终端窗口（Ctrl + ·）输入：node --inspect 文件名
