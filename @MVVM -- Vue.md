@@ -12,4 +12,9 @@
 ## 常用插件
 + vuex-persist - 解决vuex的状态不能持久化的问题，使用storage或者cookie来解决
 + axios/ vue-axios
-+ 
+
+## 公共插件
++ jscpd - 检查代码重复率
+
+## 其他
++ 持久化的问题：immutable插件，监听属性，在做任何添加或者删除修改等，会创建一个新的对象。
