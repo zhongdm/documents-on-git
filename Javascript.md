@@ -7,6 +7,7 @@ Object.setProtptypeOf() -- 设置对象的原型
 > 方法一: 10..toString()
 > 方法二: (10).toString()
 > 方法三: 10 + ''
+> 十进制转换为二进制： (10).toString(2)
 
 ### 常见js的问题
 1. for..in, for..of的区别
